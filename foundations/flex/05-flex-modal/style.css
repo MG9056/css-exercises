@@ -18,25 +18,41 @@ body {
 .modal {
   background: white;
   width: 480px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  padding: 8px;
+  position: relative;
+  
 }
-
+.header {
+  font-weight: bold;
+  font-size: 20px;
+}
 .icon {
   color: royalblue;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
   background: lavender;
   width: 42px;
   height: 42px;
   border-radius: 50%;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .close-button {
   background: #eee;
+  position: absolute;
+  top: 0px;
+  right: 12px;
   border-radius: 50%;
   color: #888;
   font-weight: 400;
@@ -48,12 +64,14 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  margin-top: 12px;
 }
 
 button.continue {
